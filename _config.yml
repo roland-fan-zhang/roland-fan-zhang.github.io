@@ -3,7 +3,7 @@ author: Roland ZHANG # name of site's author
 email: roland.zhang.pro@gmail.com # email of site's author
 url: https://roland-fan-zhang.github.io # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
-description: "Ingénieur informatique ESIEE Paris"
+description: "Ingénieur informatique | Université Gustave Eiffel - ESIEE Paris"
 
 permalink: /:slug.html
 
