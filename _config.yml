@@ -1,0 +1,34 @@
+title: Roland Zhang # name of the site
+author: Roland ZHANG # name of site's author
+email: roland.zhang.pro@gmail.com # email of site's author
+url: https://roland-fan-zhang.github.io # root address of the site
+baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+description: "Ingénieur informatique ESIEE Paris"
+
+permalink: /:slug.html
+
+favicon: "logo.png" # name+extension of favicon (which must be put on the root folder)
+goat_counter: "roland" # put your GoatCounter name if you want to use GoatCounter analytics
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+  lowercase_titles: true # show titles in lowercase in lists
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jektex
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: false
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
