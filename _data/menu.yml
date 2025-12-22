@@ -2,9 +2,9 @@ entries:
   - title: cours
     url: https://roland-fan-zhang.github.io/cours
   - title: cv
-    url: /roland-cv-fr-2026.pdf
+    url: /documents/roland-cv-fr-2026.pdf
   - title: memoire
-    url: /roland-memoire-fr-2026.pdf
+    url: /documents/roland-memoire-fr-2026.pdf
 
   - title: all posts
     post_list:
