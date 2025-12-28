@@ -1,12 +1,12 @@
 entries:
-  - title: cv fr
+  - title: cv-fr
     url: /documents/roland_cv_public_fr_2026.pdf
 
   - title: "under development : "
     entries:
       - title: web presentation
         url: https://roland-fan-zhang.github.io/cours
-      - title: thesis fr
+      - title: thesis-fr
         url: /documents/roland_thesis_fr_2026.pdf
 
   - title: all posts
