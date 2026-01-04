@@ -1,35 +1,44 @@
 entries:
-  - title: cv-fr
-    url: /documents/roland_cv_public_fr_2026.pdf
-
+  - title: 'cv : 
+  <a href="/documents/roland_cv_public_fr_2026.pdf" target="_blank">fr</a> | 
+  <a href="/documents/roland_cv_public_fr_2026.pdf" target="_blank">en</a>'
   - title: "under development : "
     entries:
       - title: web presentation
         url: https://roland-fan-zhang.github.io/cours
       - title: thesis-fr
         url: /documents/roland_thesis_fr_2026.pdf
-
-  - title: all posts
-    post_list:
-      limit: 5
-      show_more: true
-      show_more_text: See archive...
-      show_more_url: archive.html
-
-  - title: posts by category
-    post_list:
-      category: example2
-      show_more: true
-      show_more_text: See more posts...
-      show_more_url: example2-archive.html
-
-  - title: rss
-    url: feed.xml
-
-  - title: another list
+  - title: socials
     entries:
-      - title: with subitems
-        entries:
-          - title: with subsubitems
-          - title: example page
-            url: about
+      - title: github
+        url: https://github.com/roland-fan-zhang
+      - title: email
+        url: mailto:roland.zhang.pro@proton.me
+      - title: linkedin
+        url: https://www.linkedin.com/in/roland-zhang
+  - title: hobbies
+
+#  - title: all posts
+#    post_list:
+#      limit: 5
+#      show_more: true
+#      show_more_text: See archive...
+#      show_more_url: archive.html
+#
+#  - title: posts by category
+#    post_list:
+#      category: example2
+#      show_more: true
+#      show_more_text: See more posts...
+#      show_more_url: example2-archive.html
+#
+#  - title: rss
+#    url: feed.xml
+#
+#  - title: another list
+#    entries:
+#      - title: with subitems
+#        entries:
+#          - title: with subsubitems
+#          - title: example page
+#            url: about
