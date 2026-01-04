@@ -1,5 +1,5 @@
 entries:
-  - title: 'cv : 
+  - title: 'cv: 
   <a href="/documents/roland_cv_public_fr_2026.pdf" target="_blank">fr</a> | 
   <a href="/documents/roland_cv_public_fr_2026.pdf" target="_blank">en</a>'
   - title: "under development : "
@@ -17,6 +17,8 @@ entries:
       - title: linkedin
         url: https://www.linkedin.com/in/roland-zhang
   - title: hobbies
+  - title: colophon
+    url: colophon
 
 #  - title: all posts
 #    post_list:
