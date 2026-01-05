@@ -1,22 +1,16 @@
 entries:
-  - title: 'cv: 
-  <a href="/documents/roland_cv_public_fr_2026.pdf" target="_blank">fr</a> | 
-  <a href="/documents/roland_cv_public_fr_2026.pdf" target="_blank">en</a>'
-  - title: "under development : "
+  - title: 'cv:
+            <a href="/documents/roland_cv_fr_2026.pdf" target="_blank">fr</a> | 
+            <a href="/documents/roland_cv_en_2026.pdf" target="_blank">en</a>'
+  - title: 'socials: 
+            <a href="https://github.com/roland-fan-zhang" target="_blank">github</a> | 
+            <a href="mailto:roland.zhang.pro@proton.me" target="_blank">email</a> | 
+            <a href="https://www.linkedin.com/in/roland-zhang" target="_blank">linkedin</a>'
+  - title: "side projects: "
     entries:
-      - title: web presentation
-        url: https://roland-fan-zhang.github.io/cours
-      - title: thesis-fr
-        url: /documents/roland_thesis_fr_2026.pdf
-  - title: socials
-    entries:
-      - title: github
-        url: https://github.com/roland-fan-zhang
-      - title: email
-        url: mailto:roland.zhang.pro@proton.me
-      - title: linkedin
-        url: https://www.linkedin.com/in/roland-zhang
-  - title: hobbies
+      - title: '<a href="https://roland-fan-zhang.github.io/cours" target="_blank">web presentation</a>'
+      - title: '<a href="/documents/roland_thesis_fr_2026.pdf" target="_blank">thesis fr</a>'
+  - title: photography
   - title: colophon
     url: colophon
 
