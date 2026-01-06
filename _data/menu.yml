@@ -11,7 +11,7 @@ entries:
       - title: '<a href="https://roland-fan-zhang.github.io/cours" target="_blank">web presentation</a>'
       - title: '<a href="/documents/roland_thesis_fr_2026.pdf" target="_blank">thesis fr</a>'
       - title: '<a href="https://roland-fan-zhang.github.io/meaux-test/" target="_blank">university tour</a>'
-  - title: photography
+      - title: photography
   - title: colophon
     url: colophon
 
