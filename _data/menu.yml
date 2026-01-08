@@ -12,6 +12,7 @@ entries:
       - title: '<a href="/documents/roland_thesis_fr_2026.pdf" target="_blank">overleaf template</a>'
       - title: '<a href="https://roland-fan-zhang.github.io/meaux-test/" target="_blank">university tour</a>'
       - title: photography
+        url: photography
   - title: colophon
     url: colophon
 

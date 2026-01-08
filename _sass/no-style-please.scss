@@ -1,8 +1,10 @@
 // -------------- THEME SWITCHER -------------- //
 @mixin dark-appearance {
-  filter: invert(0.9) hue-rotate(180deg);
+  filter: invert(1) hue-rotate(180deg);
+  background-color: #f0f0f0;
+
   img {
-    filter: invert(1);
+    filter: invert(1) hue-rotate(180deg);
 
     &.ioda { filter: invert(0); }
   }
