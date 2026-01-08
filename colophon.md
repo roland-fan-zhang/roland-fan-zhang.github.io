@@ -3,7 +3,7 @@ layout: page
 title: Colophon
 ---
 
-This website is generated using [Jekyll](https://jekyllrb.com/) which is a static site generator write in Ruby.
+This website is generated using [Jekyll](https://jekyllrb.com/), which is a static site generator written in Ruby.
 
 ### Tech Stack
 
