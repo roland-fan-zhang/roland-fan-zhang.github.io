@@ -3,7 +3,7 @@ author: Roland ZHANG # name of site's author
 email: roland.zhang.pro@proto.me # email of site's author
 url: https://roland-fan-zhang.github.io # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
-description: 'Software Engineer | Université Gustave Eiffel - ESIEE Paris
+description: 'Computer Science Student | Université Gustave Eiffel - ESIEE Paris
               <br> <br>
               Currently working at Crédit Agricole as a Java Software Engineer.'
 
