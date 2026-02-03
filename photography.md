@@ -3,6 +3,16 @@ layout: page
 title: Photography
 ---
 
+## Gear list 2026
+- Cameras : 
+  - Sony A7V
+  - Fujifilm X100VI
+
+- Lenses : 
+  - Sony 24-70mm f/2.8 GM II
+  - Sony 16-35mm f/2.8 GM II
+<!--  - Sony 70-200mm f/2.8 GM II -->
+
 ## Street
 
 ![DSCF0408](/photos/DSCF0408.jpg)
