@@ -3,7 +3,7 @@ layout: page
 title: Photography
 ---
 
-Freelance photographer since 2025, founded during my Master’s studies in Computer Science.
+Freelance photographer since 2025, started during my Master’s studies in Computer Science.
 
 ## Gear list 2026
 - Cameras : 
