@@ -13,6 +13,8 @@ entries:
       - title: '<a href="https://roland-fan-zhang.github.io/meaux-test/" target="_blank">university tour</a>'
       - title: photography
         url: photography
+  - title: articles
+    url: articles
   - title: colophon
     url: colophon
 
