@@ -13,17 +13,15 @@ entries:
       - title: '<a href="https://roland-fan-zhang.github.io/meaux-test/" target="_blank">university tour</a>'
       - title: photography
         url: photography
-  - title: articles
-    url: articles
+  - title: "all posts:"
+    post_list:
+      limit: 1
+      show_more: true
+      show_more_text: See archive...
+      show_more_url: archive.html
   - title: colophon
     url: colophon
 
-#  - title: all posts
-#    post_list:
-#      limit: 5
-#      show_more: true
-#      show_more_text: See archive...
-#      show_more_url: archive.html
 #
 #  - title: posts by category
 #    post_list:
