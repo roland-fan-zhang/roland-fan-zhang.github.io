@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started with Springboot
+title: Getting Started with Spring Boot
 ---
 
-work in progress
+![intellij](/img/intellij-migration.webp)
