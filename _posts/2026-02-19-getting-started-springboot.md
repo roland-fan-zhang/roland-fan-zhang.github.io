@@ -3,4 +3,6 @@ layout: post
 title: Getting Started with Spring Boot
 ---
 
-![intellij](/img/intellij-migration.webp)
+work in progress
+
+<!-- ![intellij](/img/intellij-migration.webp) -->
