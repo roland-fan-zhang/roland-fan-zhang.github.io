@@ -17,10 +17,28 @@ pour les opérations finales, il existe une méthode `gather()` qui prend un
 `Gatherer` en paramètre pour les opérations intermédiaires.
 
 Il existe deux façons de créer un Gatherer:
-- Avec une interface fonctionnelle `Integrator`
-- Avec une classe factory `Gatherers`
+- `Gatherer.of()` qui prend une interface fonctionnelle `Integrator` en paramètre.
+- La classe factory `Gatherers` qui contient des méthodes permettant de créer un Gatherer.
 
 ## Integrator
+
+L'interface fonctionnelle `Integrator` contient une méthode `integrate()`
+qui prend trois paramètres:
+- `state`: Une variable d'état.
+- `element`: L'élément courant qu'on va consommer.
+- `downstream`: Utiliser pour pousser une donnée avec la méthode `push()`.
+
+Et renvoie un boolean:
+- `true`: Il reste des éléments à consommer.
+- `false`: Il ne reste plus d'éléments à consommer.
+
+Si on souhaite parcourir l'entièreté des éléments, on utilisera `Gatherer.Integrator.ofGreedy()`
+
+### Exemples
+
+```java
+
+```
 
 ## Gatherers
 
