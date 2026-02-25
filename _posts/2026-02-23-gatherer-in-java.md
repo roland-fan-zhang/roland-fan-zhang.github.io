@@ -58,6 +58,8 @@ IO.println(list);
 
 ## Gatherers
 
+La classe factory `Gatherers` contient cinq méthodes prêt à l’emploi.
+
 ### fold()
 ```java
 var list = Stream.of("foo", "bar", "baz")
