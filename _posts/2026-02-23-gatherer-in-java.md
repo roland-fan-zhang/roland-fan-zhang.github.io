@@ -36,8 +36,24 @@ Si on souhaite parcourir l'entièreté des éléments, on utilisera `Gatherer.In
 
 ### Exemples
 
+Avec l'opération intermédiaire `map()`:
 ```java
-
+var list = Stream.of("foo", "bar", "baz")
+        .map(String::toUpperCase)
+        .toList();
+IO.println(list);
+```
+L'équivalent avec un `Gatherer`:
+```java
+var list = Stream.of("foo", "bar", "baz")
+        .gather(Gatherer.of((state, element, downstream) -> {
+            downstream.push(element.toUpperCase());
+            return true;
+        })).toList();
+IO.println(list);
+```
+```shell
+[FOO, BAR, BAZ]
 ```
 
 ## Gatherers
