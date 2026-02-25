@@ -74,11 +74,15 @@ IO.println(list);
 ### scan()
 
 ```java
-
+var list = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+        .gather(Gatherers.scan(
+                () -> "", (scanned, element) -> scanned + element))
+        .toList();
+IO.println(list);
 ```
 
 ```shell
-
+[1, 12, 123, 1234, 12345, 123456, 1234567, 12345678, 123456789]
 ```
 
 ### mapConcurrent()
@@ -94,21 +98,27 @@ IO.println(list);
 ### windowFixed()
 
 ```java
-
+var list = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+        .gather(Gatherers.windowFixed(3))
+        .toList();
+IO.println(list);
 ```
 
 ```shell
-
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 ```
 
 ### windowSliding()
 
 ```java
-
+var list = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9)
+        .gather(Gatherers.windowSliding(3))
+        .toList();
+IO.println(list);
 ```
 
 ```shell
-
+[[1, 2, 3], [2, 3, 4], [3, 4, 5], [4, 5, 6], [5, 6, 7], [6, 7, 8], [7, 8, 9]]
 ```
 
 ## Sources:
@@ -121,3 +131,5 @@ IO.println(list);
 * fr:
   - [https://blog.sciam.fr/2025/04/03/gatherers-java24.html](https://blog.sciam.fr/2025/04/03/gatherers-java24.html) 
   - [https://youtu.be/xp7TAq74uQQ?si=QPKpDyN1tkqygHcK](https://youtu.be/xp7TAq74uQQ?si=QPKpDyN1tkqygHcK)
+
+last update: 2026-02-25
