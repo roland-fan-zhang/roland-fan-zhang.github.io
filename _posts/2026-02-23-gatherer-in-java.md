@@ -32,7 +32,9 @@ Et renvoie un boolean:
 - `true`: Il reste des éléments à consommer.
 - `false`: Il ne reste plus d'éléments à consommer.
 
-Si on souhaite parcourir l'entièreté des éléments, on utilisera `Gatherer.Integrator.ofGreedy()`
+Si on souhaite parcourir l'entièreté des éléments, on utilisera `Gatherer.Integrator.ofGreedy()`.
+
+Pour ignorer un Stream parallèle, on utilisera `Gatherer.ofSequential()`.
 
 ### Exemples
 
@@ -127,6 +129,7 @@ IO.println(list);
 
 * en:
   - [https://openjdk.org/jeps/485](https://openjdk.org/jeps/485)
+  - [https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherer.html](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/stream/Gatherer.html)
   - [https://dev.java/learn/api/streams/gatherers](https://dev.java/learn/api/streams/gatherers/)
   - [https://youtu.be/v_5SKpfkI2U?si=D4MqJi-3gRlvF8oU](https://youtu.be/v_5SKpfkI2U?si=D4MqJi-3gRlvF8oU)
   
@@ -134,4 +137,4 @@ IO.println(list);
   - [https://blog.sciam.fr/2025/04/03/gatherers-java24.html](https://blog.sciam.fr/2025/04/03/gatherers-java24.html) 
   - [https://youtu.be/xp7TAq74uQQ?si=QPKpDyN1tkqygHcK](https://youtu.be/xp7TAq74uQQ?si=QPKpDyN1tkqygHcK)
 
-last update: 2026-02-25
+last update: 2026-02-26
