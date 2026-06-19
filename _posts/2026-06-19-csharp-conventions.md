@@ -3,104 +3,58 @@ layout: post
 title: C# code conventions
 ---
 
-La convention est la suivante :
+## Nommage
 
-```csharp
-using System;
+- Classes, méthodes, enums, champs/propriétés publics, namespaces : **PascalCase**
+- Variables locales, paramètres : **camelCase**
+- Champs/propriétés privés, protégés, internes : **_camelCase**
+- Interfaces : commencent par **I**
+- Fichiers : **PascalCase**, un par classe principale
 
-namespace MyNamespace {
-  public interface IMyInterface {
-    public int Calculate(float value, float exp);
-  }
+## Organisation
 
-  public enum MyEnum {
-    Yes,
-    No,
-  }
+**Modificateurs** : public, protected, internal, private, new, abstract, virtual, override, sealed, static, readonly, extern, unsafe, volatile, async
 
-  public class MyClass {
-    public int Foo = 0;
-    public bool NoCounting = false;
-    private class Results {
-      public int NumNegativeResults = 0;
-      public int NumPositiveResults = 0;
-    }
-    private Results _results;
-    public static int NumTimesCalled = 0;
-    private const int _bar = 100;
-    private int[] _someTable = {
-      2, 3, 4,
-    };
+**Using** : au début, triés alphabétiquement (System d'abord)
 
-    public MyClass() {
-      _results = new Results {
-        NumNegativeResults = 1,
-        NumPositiveResults = 1,
-      };
-    }
+**Membres de classe** :
+1. Classes imbriquées, enums, délégués, événements
+2. Static, const, readonly
+3. Champs et propriétés
+4. Constructeurs, finaliseurs
+5. Méthodes
 
-    public int CalculateValue(int mulNumber) {
-      var resultValue = Foo * mulNumber;
-      NumTimesCalled++;
-      Foo += _bar;
+Puis par accès : public → internal → protected internal → protected → private
 
-      if (!NoCounting) {
-        if (resultValue < 0) {
-          _results.NumNegativeResults++;
-        } else if (resultValue > 0) {
-          _results.NumPositiveResults++;
-        }
-      }
+## Formatage
 
-      return resultValue;
-    }
+- **Indentation** : 2 espaces
+- **Limite** : 100 caractères
+- Une instruction par ligne
+- Pas de saut avant accolade ouvrante
+- Pas de saut entre accolade fermante et else
+- Accolades obligatoires toujours
+- Espace après if/for/while, virgules
 
-    public void ExpressionBodies() {
-      Func<int, int> increment = x => x + 1;
+## Code
 
-      Func<int, int, long> difference1 = (x, y) => {
-        long diff = (long)x - y;
-        return diff >= 0 ? diff : -diff;
-      };
-
-      Func<int, int, long> difference2 =
-          (x, y) => {
-            long diff = (long)x - y;
-            return diff >= 0 ? diff : -diff;
-          };
-
-      CallWithDelegate(
-          (x, y) => {
-            long diff = (long)x - y;
-            return diff >= 0 ? diff : -diff;
-          });
-    }
-
-    void DoNothing() {}
-
-    void AVeryLongFunctionNameThatCausesLineWrappingProblems(int longArgumentName,
-                                                             int p1, int p2) {}
-
-    void AnotherLongFunctionNameThatCausesLineWrappingProblems(
-        int longArgumentName, int longArgumentName2, int longArgumentName3) {}
-
-    void CallingLongFunctionName() {
-      int veryLongArgumentName = 1234;
-      int shortArg = 1;
-      AnotherLongFunctionNameThatCausesLineWrappingProblems(shortArg, shortArg,
-                                                            veryLongArgumentName);
-      AnotherLongFunctionNameThatCausesLineWrappingProblems(
-          veryLongArgumentName, veryLongArgumentName, veryLongArgumentName);
-    }
-  }
-}
-```
+- **Constantes** : const si possible, sinon readonly
+- **Collections** : entrée type restrictif, sortie IList si transfert sinon restrictif
+- **Array vs List** : List<> publique, arrays taille fixe
+- **Propriétés** : expression body (=>) pour read-only une ligne
+- **Lambdas** : méthode nommée si >2 statements ou réutilisé
+- **var** : encouragé si type obvie
+- **Extension methods** : rarement, source indisponible ou modification infaisable
+- **Ref/out** : out pour retours seulement, ref très rare
+- **LINQ** : appels simples, préférer extension methods
+- **Structs** : presque toujours classe, sauf type valeur petit
+- **Arguments** : constantes nommées, enums, variables intermédiaires, Named Arguments, configuration class
 
 Sur l'IDE Rider, il faut modifier le fichier `.editorconfig` à la racine du projet.
 
-Un exemple de `.editorconfig` : https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options
+Un exemple de `.editorconfig` : [https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options)
 
-Sur IntelliJ en Java, ce sera un fichier XML à fournir, par exemple : https://google.github.io/styleguide/intellij-java-google-style.xml
+Sur IntelliJ en Java, ce sera un fichier XML à fournir, par exemple : [https://google.github.io/styleguide/intellij-java-google-style.xml](https://google.github.io/styleguide/intellij-java-google-style.xml)
 
 ## Sources:
 
