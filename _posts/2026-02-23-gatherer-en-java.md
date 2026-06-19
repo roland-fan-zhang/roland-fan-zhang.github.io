@@ -1,11 +1,11 @@
 ---
 layout: post
-title: What is a Gatherer
+title: Gatherer en Java
 ---
 
 L'API des **Stream Gatherers** est une fonctionnalité apparu en Java 22 puis 
 finalisé en Java 24 qui permet à l'utilisateur de créer ses propres
-opérations intermédiaire.
+opérations intermédiaires.
 
 ## Utilisation
 
@@ -13,17 +13,17 @@ Tout comme la méthode `collect()` qui prend en paramètre un `Collector`
 pour les opérations finales, il existe une méthode `gather()` qui prend un
 en paramètre `Gatherer` pour les opérations intermédiaires.
 
-Note: Pour savoir si une méthode est une opération intermédiaire,
+Note : Pour savoir si une méthode est une opération intermédiaire,
 on regarde si la méthode retourne un `Stream`.
 
-Il existe deux façons de créer un Gatherer:
+Il existe deux façons de créer un Gatherer :
 - `Gatherer.of()` qui prend une interface fonctionnelle `Integrator` en paramètre.
 - La classe factory `Gatherers` qui contient des méthodes permettant de créer un Gatherer.
 
 ## Integrator
 
 L'interface fonctionnelle `Integrator` contient une méthode `integrate()`
-qui prend trois paramètres:
+qui prend trois paramètres :
 - `state`: Une variable d'état.
 - `element`: L'élément courant qu'on va consommer.
 - `downstream`: Un downstream qui permet de pousser un élément avec la méthode `push()`.
@@ -136,5 +136,3 @@ IO.println(list);
 * fr:
   - [https://blog.sciam.fr/2025/04/03/gatherers-java24.html](https://blog.sciam.fr/2025/04/03/gatherers-java24.html) 
   - [https://youtu.be/xp7TAq74uQQ?si=QPKpDyN1tkqygHcK](https://youtu.be/xp7TAq74uQQ?si=QPKpDyN1tkqygHcK)
-
-last update: 2026-02-26
