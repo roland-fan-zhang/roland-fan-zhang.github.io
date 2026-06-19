@@ -13,7 +13,7 @@ entries:
       - title: '<a href="https://github.com/roland-fan-zhang/quarkus-sample" target="_blank">quarkus sample</a>'
   - title: "all posts:"
     post_list:
-      limit: 4
+      limit: 3
       show_more: true
       show_more_text: See archive...
       show_more_url: archive.html

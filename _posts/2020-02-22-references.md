@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recommendations
+title: References
 ---
 
 websites:
@@ -9,7 +9,3 @@ websites:
 - [https://owasp.org/www-project-top-ten](https://owasp.org/www-project-top-ten/) - OWASP Top Ten
 - [https://www.tiobe.com/tiobe-index](https://www.tiobe.com/tiobe-index/) - TIOBE Index
 - [https://projecteuler.net](https://projecteuler.net/) - Project Euler
-
-books:
-- [Troubleshooting in Java](https://laurspilca.com/troubleshooting-java/) - Laurentiu Spilca
-- [Spring in Action](https://www.habuma.com/#books) - Craig Walls
