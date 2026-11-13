@@ -1,10 +1,10 @@
 entries:
   - title: 'cv:
-            <a href="/documents/roland-cv-ats-2026-fr-java.pdf" target="_blank">fr</a> | 
-            <a href="/documents/roland-cv-ats-2026-en-java.pdf" target="_blank">en</a>'
+            <a href="/documents/roland_cv_ats_2026_fr.pdf" target="_blank">fr</a> | 
+            <a href="/documents/roland_cv_ats_2026_en.pdf" target="_blank">en</a>'
   - title: 'socials: 
             <a href="https://github.com/roland-fan-zhang" target="_blank">github</a> | 
-            <a href="mailto:roland.zhang.pro@proton.me" target="_blank">email</a> | 
+            <a href="mailto:roland.zhang@ca-ts.fr" target="_blank">email</a> | 
             <a href="https://www.linkedin.com/in/roland-zhang" target="_blank">linkedin</a>'
   - title: "side projects: "
     entries:
